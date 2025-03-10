@@ -3,6 +3,22 @@
 When new versions of Tolk are released, they will be mentioned here.
 
 
+## v0.9
+
+1. Nullable types `int?`, `cell?`, etc.; null safety
+2. Standard library (asm definitions) updated to reflect nullability
+3. Smart casts, like in TypeScript in Kotlin
+4. Operator `!` (non-null assertion)
+5. Code after `throw` is treated unreachable
+6. The `never` type
+
+
+## v0.8
+
+1. Syntax `tensorVar.0` and `tupleVar.0` (both for reading and writing)
+2. Allow `cell`, `slice`, etc. to be valid identifiers (not keywords)
+
+
 ## v0.7
 
 1. Under the hood: refactor compiler internals; AST-level semantic analysis kernel
@@ -10,8 +26,6 @@ When new versions of Tolk are released, they will be mentioned here.
 3. Clear and readable error messages on type mismatch
 4. Generic functions `fun f<T>(...)` and instantiations like `f<int>(...)`
 5. The `bool` type; type casting via `value as T`
-
-More details [on GitHub](todo).
 
 
 ## v0.6

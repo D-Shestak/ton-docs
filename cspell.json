@@ -116,6 +116,9 @@
     "Tolk",
     "Toncoin",
     "Toncoins",
+    "Tonhub",
+    "Tonkeeper",
+    "Tonkey",
     "Underload",
     "Uninit",
     "WAGMI",
@@ -306,6 +309,7 @@
     "xlarge",
     "xtwitter",
     "yourname",
+    "zellic",
     "zerostate"
   ],
   "ignoreRegExpList": [
