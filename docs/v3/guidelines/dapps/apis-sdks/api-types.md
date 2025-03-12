@@ -1,13 +1,13 @@
-# API Types
+# API types
 
 **High availability blockchain APIs are the core element of secure, convenient and fast development of useful applications on TON.**
 
 - [TON HTTP API](/v3/guidelines/dapps/apis-sdks/ton-http-apis) — API that allows to work with the _indexed blockchain information_.
-- [TON ADNL API](/v3/guidelines/dapps/apis-sdks/ton-adnl-apis) — secure API to communicate with TON, based on ADNL protocol.
+- [TON ADNL API](/v3/guidelines/dapps/apis-sdks/ton-adnl-apis) — Secure API to communicate with TON, based on ADNL protocol.
   
-:::tip TON Infrastructure Status
-* [status.toncenter](https://status.toncenter.com/) - various statistics of nodes activity during the last hour.
-* [Tonstat.us](https://tonstat.us/) - a real-time Grafana, updated every 5 minutes.
+:::tip TON infrastructure status
+* [status.toncenter](https://status.toncenter.com/) - Various statistics of nodes activity during the last hour.
+* [Tonstat.us](https://tonstat.us/) - A real-time Grafana, updated every 5 minutes.
 :::
 
 ## Toncenter APIs
@@ -15,10 +15,10 @@
 - [toncenter/v2](https://toncenter.com/) - This API enables HTTP access to TON blockchain - getting accounts and wallets information, looking up blocks and transactions, sending messages to the blockchain, calling get methods of smart contracts, and more.
 
 ## Third party APIs
-- [tonapi.io](https://docs.tonconsole.com/tonapi) - fast indexed API which provides basic data about accounts, transactions, blocks, application-specific data about NFT, Auctions, Jettons, TON DNS, Subscriptions. It also provides annotated data on transaction chains.
-- [TONX API](https://docs.tonxapi.com/) - an API specifically designed for seamless Dapp development, enabling easy access to a variety of tools and data.
+- [tonapi.io](https://docs.tonconsole.com/tonapi) - Fast indexed API which provides basic data about accounts, transactions, blocks, application-specific data about NFT, Auctions, Jettons, TON DNS, Subscriptions. It also provides annotated data on transaction chains.
+- [TONX API](https://docs.tonxapi.com/) - An API specifically designed for seamless Dapp development, enabling easy access to a variety of tools and data.
 - [dton.io](https://dton.io/graphql/) - GraphQL API with that can provide data about accounts, transactions and blocks, as well as application-specific data about NFT, Auctions, Jettons and TON DNS.
-- [ton-api-v4](https://mainnet-v4.tonhubapi.com) - another lite-api focused on speed via aggressive cashing in CDN.
+- [ton-api-v4](https://mainnet-v4.tonhubapi.com) - Another lite-api focused on speed via aggressive cashing in CDN.
 - [docs.nftscan.com](https://docs.nftscan.com/reference/ton/model/asset-model) - NFT APIs for TON blockchain.
 - [everspace.center](https://everspace.center/toncoin) - Simple RPC API for accessing TON Blockchain.
 
@@ -32,7 +32,7 @@
 * https://apiguide.coingecko.com/getting-started
 
 
-### Address Convert APIs
+### Address convert APIs
 
 
 :::info
@@ -40,7 +40,7 @@ It is preferable to convert address via local algorithm, read more in the [Addre
 :::
 
 
-#### From Friendly to Raw form
+#### From friendly to raw form
 
 /api/v2/unpackAddress
 
@@ -59,7 +59,7 @@ Response body
 }
 ```
 
-#### From Friendly to Raw form
+#### From friendly to raw form
 
 /api/v2/packAddress
 
@@ -83,4 +83,4 @@ Response body
 ## See Also
 * [TON HTTP API](/v3/guidelines/dapps/apis-sdks/ton-http-apis)
 * [List of SDKs](/v3/guidelines/dapps/apis-sdks/sdk)
-* [TON Cookbook](/v3/guidelines/dapps/cookbook)
+* [TON cookbook](/v3/guidelines/dapps/cookbook)
