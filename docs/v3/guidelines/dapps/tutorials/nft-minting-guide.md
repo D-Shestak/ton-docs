@@ -461,7 +461,7 @@ export function encodeOffChainContent(content: string) {
 }
 ```
 
-## 🚢 Deploy NFT Collection
+## 🚢 Deploy NFT collection
 When our metadata is ready and already uploaded to IPFS, we can start with deploying our collection!
 
 We will create file, that will store all logic related to our collection in `/contracts/NftCollection.ts` file. As always will start with imports:
@@ -668,7 +668,7 @@ await waitSeqno(seqno, wallet);
 ```
 
 
-## 🚢 Deploy NFT Items
+## 🚢 Deploy NFT items
 When our collection is ready, we can start minting our NFT! We will store code in `src/contracts/NftItem.ts`
 
 Unexpectedly, but now we need to go back to the `NftCollection.ts`. And add this type near to `collectionData` at the top of the file.
@@ -837,7 +837,7 @@ In order to put the nft for sale, we need two smart contracts.
 - Marketplace, which is responsible only for logic of creating new sales
 - Sale contract, which is responsible for the logic of buying/cancelling a sale
 
-### Deploy marketplace
+### Deploy a marketplace
 Create new file in `/contracts/NftMarketplace.ts`. As usual create basic class, which will accept address of owner of this marketplace and create cell with code(we will use [basic version of NFT-Marketplace smart contract](https://github.com/ton-blockchain/token-contract/blob/main/nft/nft-marketplace.fc)) of this smart contract & initial data. 
 
 ```ts
@@ -1047,7 +1047,7 @@ Create cell with the body for our message. Firstly we need to set op-code to 1(t
   payload.storeRef(new Cell());
 ```
 
-And at the end let's send our message:
+Finally, let's send our message:
 
 ```ts
   const seqno = await wallet.contract.getSeqno();
@@ -1191,10 +1191,10 @@ Today you have learned a lot of new things about TON and even created your own b
 ## References
 
 - [GetGems NFT-contracts](https://github.com/getgems-io/nft-contracts)
-- [NFT Standard](https://github.com/ton-blockchain/TEPs/blob/master/text/0062-nft-standard.md)
+- [NFT standard](https://github.com/ton-blockchain/TEPs/blob/master/text/0062-nft-standard.md)
 
 ## About the author 
 - Coalus on [Telegram](https://t.me/coalus) or [GitHub](https://github.com/coalus)
 
-## See Also
- - [NFT Use Cases](/v3/documentation/dapps/defi/nft)
+## See also
+ - [NFT use cases](/v3/documentation/dapps/defi/nft)
