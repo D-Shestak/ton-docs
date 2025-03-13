@@ -9,10 +9,10 @@ Prior to June 2023 it wasn't possible to verify cryptographic proofs on TON. Due
 :::
 
 ## 🦄 This tutorial will cover
-1. The basics of zero-knowledge cryptography and specifically zk-SNARKs (Zero-Knowledge Succinct Non-Interactive Argument of Knowledge)
-2. Initiating a trusted setup ceremony (using the Powers of Tau)
-3. Writing and compiling a simple ZK circuit (using the Circom language)
-4. Generating, deploying, and testing a FunC contract to verify a sample ZK-proof
+1. The basics of zero-knowledge cryptography and specifically zk-SNARKs (Zero-Knowledge Succinct Non-Interactive Argument of Knowledge).
+2. Initiating a trusted setup ceremony (using the Powers of Tau).
+3. Writing and compiling a simple ZK circuit (using the Circom language).
+4. Generating, deploying, and testing a FunC contract to verify a sample ZK-proof.
 
 
 ## 🟥🟦 Explaining ZK-proofs with a color-focused example
@@ -27,17 +27,17 @@ Nonetheless, this is an interactive solution and it's not efficient to have a DA
 
 For the purposes of this tutorial, we’ll only cover Zk-SNARKs. However, you can read more about how Zk-STARKs work on the [StarkWare website](https://starkware.co/stark/), while info that compares the differences between Zk-SNARKs and Zk-STARKs can be found on this [Panther Protocol blog post](https://blog.pantherprotocol.io/zk-snarks-vs-zk-starks-differences-in-zero-knowledge-technologies/).**
 
-### 🎯 Zk-SNARK: Zero-Knowledge Succinct Non-Interactive Argument of Knowledge
+### 🎯 Zk-SNARK: a short, non-interactive, zero-knowledge argument of knowledge
 
 A Zk-SNARK is a non-interactive proof system where the prover can demonstrate to the verifier that a statement is true by simply submitting one proof. And the verifier is able to verify the proof in a very short time. Typically, dealing with a Zk-SNARK consists of three main phases:
-* Conducting a trusted setup using a [multi-party computation (MPC)](https://en.wikipedia.org/wiki/Secure_multi-party_computation) protocol to generate proving and verification keys (using Powers of TAU)
-* Generating a proof using a prover key, public input, and secret input (witness)
-* Verifying the proof
+* Conducting a trusted setup using a [multi-party computation (MPC)](https://en.wikipedia.org/wiki/Secure_multi-party_computation) protocol to generate proving and verification keys (using Powers of TAU),
+* Generating a proof using a prover key, public input, and secret input (witness),
+* Verifying the proof.
 
 
 Let's set up our development environment and start coding!
 
-## ⚙ Development environment setup
+## ⚙ Setting up the development environment
 
 Let's begin the process by taking the following steps:
 
@@ -559,25 +559,25 @@ In order to check the repo that contains the code from this tutorial, click on t
 
 In this tutorial you learned the following skills:
 
-* The intricacies of zero-knowledge and specifically ZK-SNARKs
-* Writing and compiling Circom circuiting
-* Increased familiarity with MPC and the Powers of TAU, which were used to generate verification keys for a circuit
-* Became familiar with a Snarkjs library to export a FunC verifier for a circuit
-* Became familiar with Blueprint for verifier deployment and test writing
+* The intricacies of zero-knowledge and specifically ZK-SNARKs.
+* Writing and compiling Circom circuiting.
+* Increased familiarity with MPC and the Powers of TAU, which were used to generate verification keys for a circuit.
+* Became familiar with a Snarkjs library to export a FunC verifier for a circuit.
+* Became familiar with Blueprint for verifier deployment and test writing.
 
 Note: The above examples taught us how to build a simple ZK use case. That said, there are a wide range of highly complex ZK-focused use cases that can be implemented in a wide range of industries. Some of these include:
 
-* private voting systems 🗳
-* private lottery systems 🎰
-* private auction systems 🤝
-* private transactions💸 (for Toncoin or Jettons) 
+* private voting systems,
+* private lottery systems,
+* private auction systems,
+* private transactions (for Toncoin or jettons).
 
-If you have any questions or encounter any errors in this tutorial, feel free to write to the author: [@saber_coder](https://t.me/saber_coder)
+If you have any questions or encounter any errors in this tutorial, feel free to write to the author: [@saber_coder](https://t.me/saber_coder).
 
 
 ## 📌 References
 
-- [TVM June 2023 Upgrade](https://docs.ton.org/learn/tvm-instructions/tvm-upgrade)
+- [TVM June 2023 upgrade](https://docs.ton.org/learn/tvm-instructions/tvm-upgrade)
 - [SnarkJs](https://github.com/iden3/snarkjs)
 - [SnarkJs FunC fork](https://github.com/kroist/snarkjs)
 - [Sample ZK on TON](https://github.com/SaberDoTcodeR/ton-zk-verifier)
@@ -586,10 +586,10 @@ If you have any questions or encounter any errors in this tutorial, feel free to
 
 ## 📖 See Also
 
-- [TON Trustless bridge EVM contracts](https://github.com/ton-blockchain/ton-trustless-bridge-evm-contracts)
-- [Tonnel Network: Privacy protocol on TON](http://github.com/saberdotcoder/tonnel-network)
-- [TVM Challenge](https://blog.ton.org/tvm-challenge-is-here-with-over-54-000-in-rewards)
+- [TON trustless bridge EVM contracts](https://github.com/ton-blockchain/ton-trustless-bridge-evm-contracts)
+- [Tonnel network: privacy protocol on TON](http://github.com/saberdotcoder/tonnel-network)
+- [TVM challenge](https://blog.ton.org/tvm-challenge-is-here-with-over-54-000-in-rewards)
 
 
 ## 📬 About the author 
-- Saber on [Telegram](https://t.me/saber_coder) or [GitHub](https://github.com/saberdotcoder) or [LinkedIn](https://www.linkedin.com/in/szafarpoor/)
+- Saber on [Telegram](https://t.me/saber_coder), [GitHub](https://github.com/saberdotcoder), and [LinkedIn](https://www.linkedin.com/in/szafarpoor/).
