@@ -1,14 +1,14 @@
-# TON blockchain for games
+# TON Blockchain for games
 
 ## What’s in the tutorial
-In this tutorial we will consider how to add the TON blockchain to a game. For our example, we will use a Flappy Bird clone written in Phaser and will add GameFi features step by step. In the tutorial we will use short code pieces and pseudocode to make it more readable. Also, we will provide links to real code blocks to help you understand better. The whole implementation can be found in the [demo repo](https://github.com/ton-community/flappy-bird).
+In this tutorial we will consider how to add TON Blockchain to a game. For our example, we will use a Flappy Bird clone written in Phaser and will add GameFi features step by step. In the tutorial we will use short code pieces and pseudocode to make it more readable. Also, we will provide links to real code blocks to help you understand better. The whole implementation can be found in the [demo repo](https://github.com/ton-community/flappy-bird).
 
 ![Flappy Bird game without GameFi features](/img/tutorials/gamefi-flappy/no-gamefi-yet.png)
 
 We are going to implement the following:
-- Achievements. Let’s reward our users with [SBTs](/v3/concepts/glossary#sbt). The achievement system is a great tool to increase user engagement.
-- Game currency. In TON blockchain it’s easy to launch your own token (jetton). The token can be used to create an in-game economy. Our users will be able to earn the game coins to spend them later.
-- Game shop. We will provide users with the possibility to purchase in-game items using either in-game currency or the TON coin itself.
+- **Achievements.** Let’s reward our users with [SBTs](/v3/concepts/glossary#sbt). The achievement system is a great tool to increase user engagement.
+- **Game currency.** In TON Blockchain, it’s easy to launch your own token (jetton). The token can be used to create an in-game economy. Our users will be able to earn the game coins to spend them later.
+- **Game shop.** We will provide users with the possibility to purchase in-game items using either in-game currency or the TON coin itself.
 
 ## Preparations
 
@@ -199,7 +199,7 @@ const playedInfo = await submitPlayed('http://localhost:3001', wallet.account.ad
 
 > Read [submitPlayer function](https://github.com/ton-community/flappy-bird/blob/article-v1/workspaces/client/src/game-scene.ts#L10) code.
 
-Let’s play the first time and ensure we will be rewarded with a FLAP token and SBT. Click the Play button, fly through a pipe or two and then hit into a tube. Alright, everything works!
+Let’s play the first time and ensure we will be rewarded with a FLAP token and SBT. Click the `Play` button, fly through a pipe or two and then hit into a tube. Alright, everything works!
 
 ![Rewarded with token and SBT](/img/tutorials/gamefi-flappy/sbt-rewarded.png)
 
@@ -224,11 +224,11 @@ To know when users make payments, we need to watch the master wallet transaction
 
 ### Client side for the shop
 
-On the client side we have the Shop button.
+On the client side we have the `Shop` button.
 
 ![Enter shop button](/img/tutorials/gamefi-flappy/shop-enter-button.png)
 
-When a user clicks the button, the shop scene is opened. The shop scene contains the list of items a user can buy. Each item has a price and a Buy button. When a user clicks the Buy button, the purchase is made.
+When a user clicks the button, the shop scene is opened. The shop scene contains the list of items a user can buy. Each item has a price and a `Buy` button. When a user clicks the `Buy` button, the purchase is made.
 
 Opening the Shop will trigger purchased items loading and updating it every 10 seconds:
 ```typescript
