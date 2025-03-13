@@ -1,18 +1,18 @@
-# Mint your first Jetton
+# Mint your first jetton
 
 Welcome, dev! It's great to have you here. 👋
 
-In this article, you'll learn how to create your first fungible token (Jetton) on TON using TON Minter.
+In this article, you'll learn how to create your first fungible token (jetton) on TON using TON Minter.
 To mint a token, we will use the [TON Minter](https://minter.ton.org/).
 
 ## 📖 What you'll learn
 
 By the end of this tutorial, you'll be able to:
 
-- deploy a token using TON Minter
-- customize your token
-- manage and use the token
-- edit token parameters
+- Deploy a token using TON Minter,
+- Customize your token,
+- Manage and use the token,
+- Edit token parameters.
 
 
 ## 📌 Prepare before you start
@@ -32,15 +32,15 @@ Use your web browser to open the service [TON Minter](https://minter.ton.org/) /
 
 ![image](/img/tutorials/jetton/jetton-main-page.png)
 
-### Deploy a Jetton using your browser
+### Deploy a jetton using your browser
 
-#### Connect Wallet
+#### Connect wallet
 
 Open [TON Minter](https://minter.ton.org/) or [TON Minter testnet](https://minter.ton.org/?testnet=true) in your web browser. Click "Connect Wallet" and link your Tonhub or another supported wallet.
 
 #### ![image](/img/tutorials/jetton/jetton-connect-wallet.png)
 
-**Scan the QR-code** in a [Mobile wallet (Tonhub e.g.)](https://ton.app/wallets/tonhub-wallet)
+**Scan the QR-code** in a [mobile wallet (Tonhub e.g.)](https://ton.app/wallets/tonhub-wallet)
 
 #### Fill in the blanks with relevant information
 
@@ -77,7 +77,7 @@ If you want your token to stand out, you’ll need to host an attractive logo on
  6. If you have a custom domain, your image URL should be `https://bitcoincash.org/logo.png` instead of the `github.io` one. This prevents dependency on GitHub and gives you full control over hosting.
 
 
- ## 💸 Send Jettons
+ ## 💸 Send jettons
 On the right side of the screen, you can **send tokens** to multi-currency wallets such as [Tonkeeper](https://tonkeeper.com/) or [Tonhub](https://ton.app/wallets/tonhub-wallet).
 
 ![image](/img/tutorials/jetton/jetton-send-tokens.png)
