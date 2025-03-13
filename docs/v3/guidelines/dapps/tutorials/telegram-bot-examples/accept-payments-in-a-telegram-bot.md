@@ -10,9 +10,9 @@ In this article, we'll guide you through the process of accepting payments in a 
 
 In this article, you'll learn how to:
 
-- create a Telegram bot using Python + Aiogram
-- work with the public TON API (TON Center)
-- work with SQlite database
+- Create a Telegram bot using Python + Aiogram,
+- Work with the public TON API (TON Center),
+- Work with SQlite database.
 
 And finally: how to accept payments in a Telegram bot with the knowledge from previous steps.
 
@@ -20,17 +20,17 @@ And finally: how to accept payments in a Telegram bot with the knowledge from pr
 
 Make sure you have installed the latest version of Python and have installed the following packages:
 
-- aiogram
-- requests
-- sqlite3
+- aiogram,
+- requests,
+- sqlite3.
 
 ## 🚀 Let's get started!
 
 We'll follow the order below:
 
-1. Work with SQlite database
-2. Work with the public TON API (TON Center)
-3. Create a Telegram bot using Python + Aiogram
+1. Work with SQlite database.
+2. Work with the public TON API (TON Center).
+3. Create a Telegram bot using Python + Aiogram.
 4. Profit!
 
 Let's create the following four files in our project directory:
@@ -77,9 +77,9 @@ import datetime
 import pytz
 ```
 
-- `sqlite3`—module for working with sqlite database
-- `datetime`—module for working with time
-- `pytz`—module for working with timezones
+- `sqlite3`—module for working with sqlite database,
+- `datetime`—module for working with time,
+- `pytz`—module for working with timezones.
 
 Next, we need to create a connection to the database and a cursor to work with it:
 
@@ -104,10 +104,10 @@ CREATE TABLE transactions (
 );
 ```
 
-- `source`—payer's wallet address
-- `hash`—transaction hash
-- `value`—transaction value
-- `comment`—transaction comment
+- `source`—payer's wallet address,
+- `hash`—transaction hash,
+- `value`—transaction value,
+- `comment`—transaction comment.
 
 #### Users:
 
@@ -121,10 +121,10 @@ CREATE TABLE users (
 );
 ```
 
-- `id`—Telegram user ID
-- `username`—Telegram username
-- `first_name`—Telegram user's first name
-- `wallet`—user wallet address
+- `id`—Telegram user ID,
+- `username`—Telegram username,
+- `first_name`—Telegram user's first name,
+- `wallet`—user wallet address.
 
 In the `users` table we store users :) Their Telegram ID, @username,
 first name, and wallet. The wallet is added to the database on the first
@@ -157,7 +157,7 @@ locCon.commit()
 
 This code will create the tables if they are not already created.
 
-### Work with  database
+### Work with database
 
 Let's analyze the situation:
 User made a transaction. How to verify it? How to make sure that the same transaction is not confirmed twice?
@@ -199,7 +199,7 @@ def check_user(user_id, username, first_name):
     return True
 ```
 
-The user can store a wallet in the table. It is added with the first successful purchase. The `v_wallet` function checks if the user has an associated wallet. If there is, then returns it. If not, then adds.
+The user can store a wallet in the table. It is added with the first successful purchase. The `v_wallet` function checks if the user has an associated wallet. If so, it returns it. If not, it adds.
 
 ```python
 def v_wallet(user_id, wallet):
@@ -254,7 +254,7 @@ def get_user_payments(user_id):
 
 _We have the ability to interact with the blockchain using third-party APIs provided by some network members. With these services, developers can skip the step of running their own node and customizing their API._
 
-### Required Requests
+### Required requests
 
 In fact, what do we need to confirm that the user has transferred the required amount to us?
 
@@ -397,9 +397,9 @@ import json
 import db
 ```
 
-- `requests`—to make requests to the API
-- `json`—to work with json
-- `db`—to work with our sqlite database
+- `requests`—to make requests to the API,
+- `json`—to work with json,
+- `db`—to work with our sqlite database.
 
 Let's create two variables for storing the start of the requests.
 
@@ -566,8 +566,8 @@ In the `WORK_MODE` key, we will define the bot's mode of operation—in the test
 
 API tokens for `*_API_TOKEN` can be obtained in the [TON Center](https://toncenter.com/) bots:
 
-- for mainnet — [@tonapibot](https://t.me/tonapibot)
-- for testnet — [@tontestnetapibot](https://t.me/tontestnetapibot)
+- for Mainnet — [@tonapibot](https://t.me/tonapibot),
+- for Testnet — [@tontestnetapibot](https://t.me/tontestnetapibot).
 
 #### Connect config to our bot
 
