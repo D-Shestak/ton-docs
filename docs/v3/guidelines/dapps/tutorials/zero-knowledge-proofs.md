@@ -2,9 +2,9 @@
 
 ## 👋 Introduction
 
-**Zero-knowledge** (ZK) proofs are a fundamental cryptographic primitive that allows one party (the prover) to prove to another party (the verifier) that a statement is true without revealing any information beyond the validity of the statement itself. Zero-knowledge proofs are a powerful tool for building privacy-preserving systems and have been used in a variety of applications including anonymous payments, anonymous messaging systems, and trustless bridges.
+**Zero-knowledge (ZK)** proofs are a fundamental cryptographic primitive that allows **the prover** to prove to **the verifier** that a statement is true without revealing any information beyond the validity of the statement itself. Zero-knowledge proofs are a powerful tool for building privacy-preserving systems and have been used in a variety of applications including anonymous payments, anonymous messaging systems, and trustless bridges.
 
-:::tip TVM Upgrade 2023.07
+:::tip TVM upgrade 2023.07
 Prior to June 2023 it wasn't possible to verify cryptographic proofs on TON. Due to the prevalence of complex computation behind the pairing algorithm, it was necessary to increase the functionality of TVM by adding TVM opcodes to conduct proof verification. This functionality was added in the [June 2023 update](https://docs.ton.org/learn/tvm-instructions/tvm-upgrade#bls12-381) and at the time of this writing is only available on testnet.
 :::
 
@@ -27,7 +27,7 @@ Nonetheless, this is an interactive solution and it's not efficient to have a DA
 
 For the purposes of this tutorial, we’ll only cover Zk-SNARKs. However, you can read more about how Zk-STARKs work on the [StarkWare website](https://starkware.co/stark/), while info that compares the differences between Zk-SNARKs and Zk-STARKs can be found on this [Panther Protocol blog post](https://blog.pantherprotocol.io/zk-snarks-vs-zk-starks-differences-in-zero-knowledge-technologies/).**
 
-### 🎯 Zk-SNARK: Zero-Knowledge Succinct Non-Interactive Argument of Knowledge
+### 🎯 Zk-SNARK: Zero-knowledge succinct non-interactive argument of knowledge
 
 A Zk-SNARK is a non-interactive proof system where the prover can demonstrate to the verifier that a statement is true by simply submitting one proof. And the verifier is able to verify the proof in a very short time. Typically, dealing with a Zk-SNARK consists of three main phases:
 * Conducting a trusted setup using a [multi-party computation (MPC)](https://en.wikipedia.org/wiki/Secure_multi-party_computation) protocol to generate proving and verification keys (using Powers of TAU)
@@ -534,7 +534,7 @@ it('should verify', async () => {
 });
 ```
 
-Are you ready to verify your first proof on TON blockchain? To start off this process, let's run the Blueprint test by inputting the following:
+Are you ready to verify your first proof on TON Blockchain? To start off this process, let's run the Blueprint test by inputting the following:
 ```bash
 npx blueprint test
 ```
@@ -560,7 +560,7 @@ In order to check the repo that contains the code from this tutorial, click on t
 In this tutorial you learned the following skills:
 
 * The intricacies of zero-knowledge and specifically ZK-SNARKs
-* Writing and compiling Circom circuiting
+* Writing and compiling circom circuiting
 * Increased familiarity with MPC and the Powers of TAU, which were used to generate verification keys for a circuit
 * Became familiar with a Snarkjs library to export a FunC verifier for a circuit
 * Became familiar with Blueprint for verifier deployment and test writing
@@ -570,7 +570,7 @@ Note: The above examples taught us how to build a simple ZK use case. That said,
 * private voting systems 🗳
 * private lottery systems 🎰
 * private auction systems 🤝
-* private transactions💸 (for Toncoin or Jettons) 
+* private transactions💸 (for Toncoin or jettons) 
 
 If you have any questions or encounter any errors in this tutorial, feel free to write to the author: [@saber_coder](https://t.me/saber_coder)
 
